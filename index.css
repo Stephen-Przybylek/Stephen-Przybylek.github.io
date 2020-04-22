@@ -3,6 +3,39 @@
   padding: 0;
 }
 
-body {
-  background-color: blue;
+html {
+  background: linear-gradient(#8e9eab, #eef2f3) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#Header {
+  font-size: 100px;
+  text-align: center;
+}
+
+#Aboutme {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+#Education {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+#Workexperience {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+#Skills {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 200px;
 }

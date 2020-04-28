@@ -3,35 +3,115 @@
   padding: 0;
 }
 
-html {
-  background: linear-gradient(#414141, #000000) no-repeat center center fixed;
-  z-index: 100;
-  --opac: 1;
-}
-
-html:before {
-  background-image: linear-gradient(#22c1c3, #fdbb2d);
+body {
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: var(--opac);
-  width: 100%;
-  z-index: -100;
-  transition: opacity 1s;
-  content: "";
 }
 
-#Header {
+html {
+  scroll-snap-type: y mandatory;
+  height: 100%;
+}
+
+.p1 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  --opac: 0;
+  scroll-snap-align: start;
+  background: white;
+}
+
+.p1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(#00d2ff, #928DAB);
+  z-index: -1;
+  transition: opacity 1s linear;
+  opacity: var(--opac);
+}
+
+.p2 {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#9796f0, #fbc7d4);
+  scroll-snap-align: start;
+}
+
+.AboutMe {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 75px;
+}
+
+.AboutMe p {
+  flex-basis: 100%;
+  opacity: 0;
+}
+
+.fadein {
+  opacity: 0;
+  lex-basis: 100%;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 75px;
+  animation-name: "aboutme";
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aboutme {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.p3 {
+  height: 100%;
+  width: 100%;
+  background: red;
+  scroll-snap-align: start;
+}
+
+.p4 {
+  height: 100%;
+  width: 100%;
+  background: purple;
+  scroll-snap-align: start;
+}
+
+#Name {
   font-size: 125px;
   text-align: center;
   position: relative;
-  font-family: 'Source Code Pro', monospace;
-  color: black;
-  transition: color 3s, text-shadow 4s;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  opacity: 0;
+  transition: color 3s, text-shadow 4s, opacity 6s;
+  top: 25%;
 }
 
-#Header.glow {
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+#Name.glow {
+  /* color: white;
+  text-shadow: 1px 1px 2px black, 0 0 20px blue, 0 0 10px darkblue; */
+  opacity: 1;
+}
+
+#About {
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  /* font-weight: bold; */
 }

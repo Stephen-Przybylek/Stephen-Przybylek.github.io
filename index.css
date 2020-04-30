@@ -20,6 +20,7 @@ html {
   --opac: 0;
   scroll-snap-align: start;
   background: white;
+  /* background: black; */
 }
 
 .p1::before {
@@ -29,26 +30,31 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(#00d2ff, #928DAB);
+  background: #0b0f11;
   z-index: -1;
   transition: opacity 1s linear;
   opacity: var(--opac);
 }
 
+.p1container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+}
+
 .p2 {
   height: 100%;
   width: 100%;
-  background: linear-gradient(#9796f0, #fbc7d4);
+  background: white;
   scroll-snap-align: start;
 }
 
 .AboutMe {
   display: flex;
   justify-content: space-between;
-  font-family: 'Source Code Pro', monospace;
   font-size: 25px;
   text-align: center;
-  margin-top: 75px;
+  margin-top: 30px;
 }
 
 .AboutMe p {
@@ -56,16 +62,28 @@ html {
   opacity: 0;
 }
 
+.AboutMe img {
+  opacity: 0;
+}
+
 .fadein {
   opacity: 0;
-  lex-basis: 100%;
-  font-family: 'Source Code Pro', monospace;
+  flex-basis: 100%;
   font-size: 25px;
   text-align: center;
-  margin-top: 75px;
+  margin-top: 30px;
   animation-name: "aboutme";
   animation-duration: 5s;
   animation-fill-mode: forwards;
+  font-family: "Qualy";
+}
+
+.picfade {
+  animation-name: "aboutme";
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  text-align: center;
+  margin-top: 2%;
 }
 
 @keyframes aboutme {
@@ -96,22 +114,77 @@ html {
   font-size: 125px;
   text-align: center;
   position: relative;
-  font-family: 'Lato', sans-serif;
+  font-family: "Qualy";
   color: white;
   opacity: 0;
   transition: color 3s, text-shadow 4s, opacity 6s;
-  top: 25%;
+  top: 20%;
 }
 
 #Name.glow {
-  /* color: white;
-  text-shadow: 1px 1px 2px black, 0 0 20px blue, 0 0 10px darkblue; */
   opacity: 1;
+  text-shadow: 2px 2px #ff0090;
+}
+
+#programming {
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  font-family: "Qualy";
+  color: white;
+  padding-top: 5%;
+  opacity: 0;
+  transition: text-shadow 6s, opacity 8s;
+}
+
+#programming.glow {
+  opacity: 1;
+  text-shadow: 2px 2px blue;
+}
+
+#fintech {
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  font-family: "Qualy";
+  color: white;
+  padding-top: 5%;
+  opacity: 0;
+  transition: text-shadow 8s, opacity 8s;
+}
+
+#fintech.glow {
+  opacity: 1;
+  text-shadow: 2px 2px green;
+}
+
+#algorithms {
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  font-family: "Qualy";
+  color: white;
+  padding-top: 5%;
+  opacity: 0;
+  transition: text-shadow 4s, opacity 8s;
+}
+
+#algorithms.glow {
+  opacity: 1;
+  text-shadow: 2px 2px purple;
 }
 
 #About {
   font-size: 100px;
   text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
-  /* font-weight: bold; */
+  font-family: 'Qualy';
+  color: black;
+}
+
+@font-face {
+  font-family: 'Qualy';
+  src: url('Qualy-Bold.woff2') format('woff2'),
+    url('Qualy-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }

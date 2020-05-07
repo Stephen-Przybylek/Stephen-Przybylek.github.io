@@ -44,7 +44,8 @@ html {
 .p2 {
   height: 100%;
   width: 100%;
-  background: linear-gradient(#E0EAFC, #CFDEF3);
+  background: linear-gradient(#4AC29A, #BDFFF3);
+  /* background: black; */
   scroll-snap-align: start;
 }
 
@@ -75,6 +76,8 @@ html {
   animation-duration: 4s;
   animation-fill-mode: forwards;
   font-family: "Qualy";
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .picfade {
@@ -167,7 +170,8 @@ html {
   font-size: 100px;
   text-align: center;
   font-family: 'Qualy';
-  color: black;
+  color: white;
+  text-shadow: -1px 0 purple, 0 1px purple, 1px 0 purple, 0 -1px purple;
 }
 
 #Skills {
@@ -178,50 +182,55 @@ html {
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-#Skills:hover+.Skills:nth-of-type(1)>#skillp {
+#Skills:active+.Skills:nth-of-type(1)>#skillp {
   color: green;
   text-shadow: 2px 2px lightgreen;
 }
 
-#Skills:hover+.Skills:nth-of-type(1)>#skillcsharp {
+#Skills:active+.Skills:nth-of-type(1)>#skillcsharp {
   color: purple;
   text-shadow: 2px 2px violet;
 }
 
-#Skills:hover+.Skills:nth-of-type(1)>#skillsql {
+#Skills:active+.Skills:nth-of-type(1)>#skillsql {
   color: yellow;
   text-shadow: 2px 2px lightyellow;
 }
 
-#Skills:hover+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)>#skilljavascript {
+#Skills:active+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)>#skilljavascript {
   animation: rainbow 5s infinite;
 }
 
-#Skills:hover+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)>#skillcss {
+#Skills:active+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)>#skillhtml {
+  color: grey;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#Skills:active+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)>#skillcss {
   color: black;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-#Skills:hover+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)>#skillcplusplus {
+#Skills:active+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)>#skillcplusplus {
   color: aqua;
   text-shadow: 2px 2px blue;
 }
 
-#Skills:hover+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)>#skilljava {
+#Skills:active+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)>#skilljava {
   color: orange;
   text-shadow: 2px 2px darkorange;
 }
 
-#Skills:hover+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)>#skilldotnet {
+#Skills:active+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)>#skilldotnet {
   color: violet;
   text-shadow: 2px 2px purple;
 }
 
-#Skills:hover+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)+.Skillsf>h1 {
+#Skills:active+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)+.Skillsf>h1 {
   color: red;
 }
 
-#Skills:hover+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)+.Skillsf>h1+h2 span {
+#Skills:active+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)+.Skillsf>h1+h2 span {
   color: red;
 }
 
@@ -324,6 +333,11 @@ html {
   white-space: pre-wrap;
 }
 
+#skillhtml:hover {
+  color: grey;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
 #skillcss {
   white-space: pre-wrap;
 }
@@ -362,14 +376,17 @@ html {
 
 #NEU {
   color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #ML {
-  color: blue;
+  color: white;
+  text-shadow: -1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue;
 }
 
 #BOS {
-  color: green;
+  color: Green;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 #Projects {
@@ -378,6 +395,44 @@ html {
   font-family: 'Qualy';
   color: white;
   text-shadow: -1px 0 #00ff00, 0 1px #00ff00, 1px 0 #00ff00, 0 -1px #00ff00;
+}
+
+#cedesc {
+  color: white;
+  text-align: center;
+  font-family: 'Qualy';
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#style1 {
+  color: black;
+  text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+}
+
+#water {
+  color: lightblue;
+  text-shadow: -1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue;
+}
+
+#stone {
+  color: gray;
+}
+
+#najdorf {
+  color: white;
+  text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+}
+
+#style2 {
+  color: black;
+  text-shadow: -1px 0 cyan, 0 1px cyan, 1px 0 cyan, 0 -1px cyan;
+}
+
+#style3 {
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 @keyframes rainbow {

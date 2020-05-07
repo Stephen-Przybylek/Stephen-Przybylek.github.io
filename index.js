@@ -2,9 +2,9 @@ function pageLoad() {
   var p1 = document.getElementsByClassName("p1")[0];
   var head = document.getElementById("Name");
   head.classList.add("glow");
-  setTimeout(programming, 1000);
-  setTimeout(fintech, 2000);
-  setTimeout(algorithms, 3000);
+  setTimeout(programming, 800);
+  setTimeout(fintech, 1600);
+  setTimeout(algorithms, 2400);
 
   p1.style.setProperty('--opac', 1);
 }

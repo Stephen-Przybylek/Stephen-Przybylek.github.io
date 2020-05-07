@@ -20,7 +20,6 @@ html {
   --opac: 0;
   scroll-snap-align: start;
   background: white;
-  /* background: black; */
 }
 
 .p1::before {
@@ -45,7 +44,7 @@ html {
 .p2 {
   height: 100%;
   width: 100%;
-  background: white;
+  background: linear-gradient(#E0EAFC, #CFDEF3);
   scroll-snap-align: start;
 }
 
@@ -73,40 +72,30 @@ html {
   text-align: center;
   margin-top: 30px;
   animation-name: "aboutme";
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-fill-mode: forwards;
   font-family: "Qualy";
 }
 
 .picfade {
   animation-name: "aboutme";
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-fill-mode: forwards;
   text-align: center;
   margin-top: 2%;
 }
 
-@keyframes aboutme {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 .p3 {
   height: 100%;
   width: 100%;
-  background: red;
+  background: linear-gradient(#83a4d4, #b6fbff);
   scroll-snap-align: start;
 }
 
 .p4 {
   height: 100%;
   width: 100%;
-  background: purple;
+  background: linear-gradient(#000000, #434343);
   scroll-snap-align: start;
 }
 
@@ -179,6 +168,336 @@ html {
   text-align: center;
   font-family: 'Qualy';
   color: black;
+}
+
+#Skills {
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Qualy';
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#Skills:hover+.Skills:nth-of-type(1)>#skillp {
+  color: green;
+  text-shadow: 2px 2px lightgreen;
+}
+
+#Skills:hover+.Skills:nth-of-type(1)>#skillcsharp {
+  color: purple;
+  text-shadow: 2px 2px violet;
+}
+
+#Skills:hover+.Skills:nth-of-type(1)>#skillsql {
+  color: yellow;
+  text-shadow: 2px 2px lightyellow;
+}
+
+#Skills:hover+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)>#skilljavascript {
+  animation: rainbow 5s infinite;
+}
+
+#Skills:hover+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)>#skillcss {
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#Skills:hover+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)>#skillcplusplus {
+  color: aqua;
+  text-shadow: 2px 2px blue;
+}
+
+#Skills:hover+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)>#skilljava {
+  color: orange;
+  text-shadow: 2px 2px darkorange;
+}
+
+#Skills:hover+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)>#skilldotnet {
+  color: violet;
+  text-shadow: 2px 2px purple;
+}
+
+#Skills:hover+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)+.Skillsf>h1 {
+  color: red;
+}
+
+#Skills:hover+.Skills:nth-of-type(1)+.Skills:nth-of-type(2)+.Skills:nth-of-type(3)+.Skillsf>h1+h2 span {
+  color: red;
+}
+
+.Skills {
+  height: 10%;
+  width: 50%;
+  background: black;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  font-family: 'Qualy';
+  display: flex;
+  justify-content: center;
+}
+
+.Skillsf {
+  height: 22%;
+  width: 50%;
+  background: black;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  font-family: 'Qualy';
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Skillsf h1 {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Qualy';
+}
+
+.Skillsf h1:hover {
+  color: red;
+}
+
+.Skillsf h2 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Qualy';
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 4%;
+  margin-left: 1%;
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+  animation-iteration-count: infinite;
+}
+
+.Skillsf h1:hover+h2>span {
+  color: red;
+}
+
+#skillp {
+  white-space: pre-wrap;
+}
+
+#skillp:hover {
+  color: green;
+  text-shadow: 2px 2px lightgreen;
+}
+
+#skillcsharp {
+  white-space: pre-wrap;
+}
+
+#skillcsharp:hover {
+  color: purple;
+  text-shadow: 2px 2px violet;
+}
+
+#skillsql {
+  white-space: pre-wrap;
+}
+
+#skillsql:hover {
+  color: yellow;
+  text-shadow: 2px 2px lightyellow;
+}
+
+#skilljavascript {
+  white-space: pre-wrap;
+}
+
+#skilljavascript:hover {
+  animation: rainbow 5s infinite;
+}
+
+#skillhtml {
+  white-space: pre-wrap;
+}
+
+#skillcss {
+  white-space: pre-wrap;
+}
+
+#skillcss:hover {
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#skillcplusplus {
+  white-space: pre-wrap;
+}
+
+#skillcplusplus:hover {
+  color: aqua;
+  text-shadow: 2px 2px blue;
+}
+
+#skilljava {
+  white-space: pre-wrap;
+}
+
+#skilljava:hover {
+  color: orange;
+  text-shadow: 2px 2px darkorange;
+}
+
+#skilldotnet {
+  white-space: pre-wrap;
+}
+
+#skilldotnet:hover {
+  color: violet;
+  text-shadow: 2px 2px purple;
+}
+
+#NEU {
+  color: red;
+}
+
+#ML {
+  color: blue;
+}
+
+#BOS {
+  color: green;
+}
+
+#Projects {
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Qualy';
+  color: white;
+  text-shadow: -1px 0 #00ff00, 0 1px #00ff00, 1px 0 #00ff00, 0 -1px #00ff00;
+}
+
+@keyframes rainbow {
+  0% {
+    color: orange;
+  }
+
+  5% {
+    color: purple;
+  }
+
+  10% {
+    color: red;
+  }
+
+  15% {
+    color: CadetBlue;
+  }
+
+  20% {
+    color: yellow;
+  }
+
+  25% {
+    color: coral;
+  }
+
+  30% {
+    color: green;
+  }
+
+  35% {
+    color: cyan;
+  }
+
+  40% {
+    color: DeepPink;
+  }
+
+  45% {
+    color: DodgerBlue;
+  }
+
+  50% {
+    color: orange;
+  }
+
+  55% {
+    color: orange;
+  }
+
+  60% {
+    color: purple;
+  }
+
+  65% {
+    color: red;
+  }
+
+  70% {
+    color: CadetBlue;
+  }
+
+  75% {
+    color: yellow;
+  }
+
+  80% {
+    color: coral;
+  }
+
+  85% {
+    color: green;
+  }
+
+  90% {
+    color: cyan;
+  }
+
+  95% {
+    color: DeepPink;
+  }
+
+  97% {
+    color: DodgerBlue;
+  }
+
+  100% {
+    color: orange;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes aboutme {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 27em;
+  }
 }
 
 @font-face {
